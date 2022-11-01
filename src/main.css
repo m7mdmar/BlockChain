@@ -1,0 +1,117 @@
+:root{
+    --font-white-color: white;
+}
+
+.a-mainIcon{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--font-white-color);
+    font-size: 30px;
+    padding: 0px 50px;
+}
+
+.SignUp-btn{
+    position: relative;
+    text-decoration: none;
+    color: var(--bs-gray-500);
+    z-index: 1;
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.SignUp-btn::before{
+    content: 'SignUp';
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 70%;
+    height: 70%;
+    border: 3px solid transparent;
+    border-radius: 20px ;
+    z-index: 10;
+    background-image: linear-gradient( var(--bs-secondary), var(--bs-secondary)),radial-gradient(circle at top left,#fd00da,#19d7f8);
+    background-clip: content-box,border-box; 
+    background-origin: border-box;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+	
+}
+
+.SignUp-btn span {
+    padding: 6px;  
+}
+
+@keyframes gradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
+
+.SignUp-btn:hover {
+    color: var(--bs-gray-300);
+    transition: 0.5s;
+    animation: bg-color 3s ease-in-out infinite ;
+}
+
+.Flex-row{
+    padding: 50px;
+}
+
+.textMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.textMain h1 {
+    color : var(--font-white-color)
+}
+
+.textMain p {
+    color : #c6c6c6;
+}
+
+.imageMain img{
+    width : 100%;
+    height: 100%;
+}
+
+.play-btn{
+    text-decoration: none;
+    display: flex;
+    margin-right: auto;
+}
+
+.play-btn-inner{
+    color: var(--font-white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    width: 50px;
+    border: 3px solid transparent;
+    border-radius: 100% ;
+    background-image: linear-gradient( var(--bs-secondary), var(--bs-secondary)),radial-gradient(circle at top left,#fd00da,#19d7f8);
+    background-clip: content-box,border-box; 
+    background-origin: border-box;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.textMAinDec{
+    text-decoration: none;
+}
+
+.textMore {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    color : var(--font-white-color);
+    text-align: center;
+}
+
